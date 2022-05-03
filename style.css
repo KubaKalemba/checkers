@@ -1,0 +1,90 @@
+body {
+    background-color: lightblue;
+    font-family: 'Prompt', sans-serif;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    color: indigo;
+    font-size: 2em;
+}
+
+.board {
+    display: inline-grid;
+    grid-template-columns: repeat(8, auto);
+    border: solid indigo;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.white-square, .black-square {
+    display: flex;
+    width: 64px;
+    height: 64px;
+    color: indigo;
+    align-items: center;
+    justify-content: center;
+}
+
+.black-square {
+    background-color: black;
+}
+
+.white-square {
+    background-color: white;
+}
+
+.black-square-highlight {
+    background-color: dimgrey;
+}
+
+.reset-game {
+}
+
+.reset-button {
+    margin-bottom: 16px;
+    padding: 8px;
+    background-color: indigo;
+    color: lightblue;
+    border: solid indigo;
+    border-radius: 20%;
+    transition: transform .2s ease-in-out;
+}
+
+.reset-button:hover {
+    transform: scale(1.2);
+}
+
+.footer {
+    color: indigo;
+}
+
+.fa-github {
+    font-size: 16px;
+    transition: transform .5s ease-in-out;
+}
+
+.fa-github:hover {
+    transform: rotate(360deg) scale(1.2);
+}
+
+.piece {
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    transition: transform .2s ease-in-out;
+}
+
+.fa-crown {
+    transition: transform .5s ease-in-out;
+}
+
+.fas {
+    transition: transform .5s ease-in-out;
+}
